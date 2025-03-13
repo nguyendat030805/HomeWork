@@ -67,12 +67,13 @@
                     <div class="visible-xs clearfix"></div>
                     <nav class="main-menu">
                         <ul class="l-inline ov">
-                            <li><a href="index.html">Trang chủ</a></li>
-                            <li><a href="#">Sản phẩm</a>
+                            <li><a href="/pagetrangchu">Trang chủ</a></li>
+                            <li><a href="/type">Loại sản phẩm</a>
                                 <ul class="sub-menu">
-                                    <li><a href="product_type.html">Sản phẩm 1</a></li>
-                                    <li><a href="product_type.html">Sản phẩm 2</a></li>
-                                    <li><a href="product_type.html">Sản phẩm 4</a></li>
+                                    @foreach ($loai_sp as $type )
+                                        <li><a href="/type/{{ $type->id }}">{{ $type->name }}</a></li>
+                                    @endforeach
+                                    
                                 </ul>
                             </li>
                             <li><a href="about.html">Giới thiệu</a></li>

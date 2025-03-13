@@ -8,3 +8,4 @@ Route::get('/trangchu', function () {
     return view('page.trangchu');
 });
 Route::get('/pagetrangchu', [PageController::class, 'getIndex']);
+Route::get('/type/{id}', [PageController::class, 'getType']);

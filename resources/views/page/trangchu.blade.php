@@ -41,12 +41,11 @@
 <div class="beta-products-list">
 <h4>New Products</h4>
 <div class="beta-products-details">
-<p class="pull-left">{{count($new_product)}} styles found</p>
 <div class="clearfix"></div>
 </div>
 
 <div class="row">
-@foreach($new_product as $new)
+@foreach($newproducts as $new)
 <div class="col-sm-3">
 <div class="single-item">
 <div class="single-item-header">
@@ -71,7 +70,7 @@ src="/source/image/product/{{$new->image}}" alt=""></a>
 </p>
 </div>
 <div class="single-item-caption">
-<a class="add-to-cart pull-left" href="{{route('themgiohang',$new->id)}}"><i
+
 class="fa fa-shopping-cart"></i></a>
 
 <a class="add-to-wishlist" href="wishlist/add/{{$new->id}}"><i class="fa fa-heart"></i></a>
@@ -84,7 +83,7 @@ class="fa fa-chevron-right"></i></a>
 </div>
 @endforeach
 </div>
-<div class="row">{{$new_product->links("pagination::bootstrap-4")}}</div>
+<div class="row">{{$newproducts->links("pagination::bootstrap-4")}}</div>
                                 
                                     
                                     
