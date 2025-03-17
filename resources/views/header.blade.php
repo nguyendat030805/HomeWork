@@ -76,8 +76,8 @@
                                     
                                 </ul>
                             </li>
-                            <li><a href="about.html">Giới thiệu</a></li>
-                            <li><a href="contacts.html">Liên hệ</a></li>
+                            <li><a href="/About">Giới thiệu</a></li>
+                            <li><a href="/Contact">Liên hệ</a></li>
                         </ul>
                         <div class="clearfix"></div>
                     </nav>

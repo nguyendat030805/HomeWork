@@ -50,7 +50,7 @@
 <div class="single-item">
 <div class="single-item-header">
 <a href="detail/{{$new->id}}"><img width="200" height="200"
-src="/source/image/product/{{$new->image}}" alt=""></a>
+src="source/source/image/product/{{$new->image}}" alt=""></a>
 </div>
 @if($new->promotion_price==!0)
 <div class="ribbon-wrapper">
